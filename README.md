@@ -1,7 +1,17 @@
 # sj-code-test
 Python script to insert data into mongodb
 
-## Commands
+### Create cluster using kind
+
+```
+kind create cluster --name mongodb
+```
+### Install bitnami mongodb helmchart
+
+```
+helm install my-release oci://registry-1.docker.io/bitnamicharts/mongodb -n mongodb
+```
+### Command to insert data into mongodb
 
 ```
 python3 release_info.py --user "Naveen" --service_name "my_service" --release_tag "v1.0.0" 
