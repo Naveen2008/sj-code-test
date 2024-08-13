@@ -11,6 +11,7 @@ kind create cluster --name mongodb
 ```
 helm install my-release oci://registry-1.docker.io/bitnamicharts/mongodb -n mongodb
 ```
+
 ### Command to insert data into mongodb
 
 ```
